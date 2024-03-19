@@ -1,0 +1,127 @@
+.tech {
+    background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        display: flex;
+    }
+    &__descr-wrapper {
+        display: flex;
+    }
+    &__title {
+        width: 229px;
+        margin-left: 166.5px;
+        margin-top: 76px;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+
+        color: #D0D6F9;
+    }
+    &__title span {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        /* identical to box height */
+
+        letter-spacing: 4.725px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+    &__btn-item {
+        width: 80px;
+        height: 80px;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        background-color: #0B0D17;
+        border: 1px solid #FFFFFF;
+        border-radius: 100%;
+    
+        margin-bottom: 32px;
+        cursor: pointer;
+
+
+    }
+    &__btn-item span {
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+        
+        text-align: center;
+        letter-spacing: 2px;
+       
+        color: #FFFFFF;
+    }
+
+    &__name {
+        margin-top: 137px;
+        width: 212px;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+
+        color: #D0D6F9;
+
+    }
+    &__btn-list {
+        width: 150px;
+        margin-left: 165px;
+        margin-top: 137px;
+        margin-right: 80px;
+    }
+
+    &__subtitle {
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+
+        color: #FFFFFF;
+
+    }
+
+    &__descr {
+        width: 444px;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+        text-align: left;
+
+        color: #D0D6F9;
+    }
+    
+}
+
+.active-tech {
+    background: #FFFFFF;
+    opacity: 1;
+
+}
+
+.active-tech span {
+    color: #0B0D17;
+}
+
+
+.wrapper__tech {
+    margin-right: 130px;
+}

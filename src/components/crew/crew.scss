@@ -1,0 +1,127 @@
+.crew {
+    background-image: url('../../assets/crew/background-crew-desktop.jpg    ');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: flex;
+
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        /* identical to box height */
+
+        letter-spacing: 4.725px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        margin-top: 76px;
+        margin-left: 166.5px;
+    }
+
+    &__title span {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        /* identical to box height */
+
+        letter-spacing: 4.725px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        margin-right: 24px;
+    }
+
+    &__job {
+        width: 150px;
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-top: 154px;
+        margin-left: 165.5px;
+    }
+
+    &__name {
+        
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        margin-left: 165px;
+        margin-top: 15px;
+        margin-bottom: 27px;
+    }
+
+    &__descr {
+        width: 444px;
+        height: 128px;
+        text-align: left;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* or 178% */
+
+
+        color: #D0D6F9;
+        margin-left: 165.5px;
+        margin-bottom: 120px;
+    }
+
+    &__btn-list {
+        display: flex;
+        margin-left: 167px;
+    }
+
+    &__btn-item {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: #FFFFFF;
+        border: none;
+        mix-blend-mode: normal;
+        opacity: 0.17;
+        margin-right: 24px;
+        cursor: pointer;
+    }
+   
+
+    &__img img {
+        position: absolute;
+        right: 110px;
+        margin-top: 64px;   
+    }
+}
+
+.active__crew {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
