@@ -8,14 +8,14 @@ import Crew from "./components/crew/Crew";
 import Tech from "./components/tech/Tech";
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Routes>
         <Route exact path="/" element={<Home></Home>} />
         <Route path="/destination" element={<Destination></Destination>} />
         <Route path="/crew" element={<Crew></Crew>} />
         <Route path="/tech" element={<Tech></Tech>} />
       </Routes>
-    </div>
+    </main>
   );
 }
 
