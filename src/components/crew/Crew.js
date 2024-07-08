@@ -1,5 +1,7 @@
 import { React, useState } from "react";
 import "./crew.scss";
+
+import { motion } from "framer-motion";
 import Nav from "../nav/Nav";
 import data from "../../data.json";
 
@@ -20,13 +22,27 @@ const Crew = () => {
   return (
     <div className="crew">
       <Nav />
-      <div className="crew__wrapper">
-        <div className="crew__descr-wrapper">
-          <div className="crew__title">
-            <span>02</span>
-            Meet your crew
-          </div>
+      <div className="crew__title">
+        <span>02</span>
+        Meet your crew
+      </div>
 
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="crew__phone-img"
+      >
+        <img src={imgArr[value]} alt={name} />
+      </motion.div>
+      <div className="hr__phone"></div>
+      <div className="crew__wrapper">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="crew__descr-wrapper"
+        >
           <div className="crew__job">{role}</div>
           <div className="crew__name">{name}</div>
 
@@ -45,11 +61,16 @@ const Crew = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="crew__img">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+        className="crew__img"
+      >
         <img src={imgArr[value]} alt={name} />
-      </div>
+      </motion.div>
     </div>
   );
 };

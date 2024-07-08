@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import "./destination.scss";
 import data from "../../data.json";
+import { motion } from "framer-motion";
 import Nav from "../nav/Nav";
 import moon from "../../assets/destination/image-moon.png";
 import mars from "../../assets/destination/image-mars.png";
@@ -31,7 +32,12 @@ const Destination = () => {
             <img src={imgArr[value]} alt={name} title={name} />
           </div>
 
-          <div className="planet__info-text">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="planet__info-text"
+          >
             <ul className="planet__info-list">
               {planets.map((item, index) => (
                 <li
@@ -63,7 +69,7 @@ const Destination = () => {
                 <div className="travel__time">{travel}</div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

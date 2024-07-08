@@ -62,7 +62,7 @@
   background-color: #ffffff;
   color: #0b0d17;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .home__button span {
@@ -148,6 +148,45 @@
       margin: 70px 0;
 
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .home {
+    &__title {
+      font-size: 16px;
+    }
+
+    &__space {
+      font-size: 80px;
+    }
+
+    &__descr {
+      width: 327px;
+      height: 125px;
+      font-size: 15px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__button {
+      width: 150px;
+      height: 150px;
+    }
+
+    &__button span {
+      font-size: 20px;
+      margin-top: 60px;
+      margin-left: -47.5px;
+    }
+  }
+}
+
+@media (max-width: 332px) {
+  .home {
+    &__descr {
+      width: 90%;
     }
   }
 }

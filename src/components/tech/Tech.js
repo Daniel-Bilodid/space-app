@@ -8,6 +8,7 @@ import data from "../../data.json";
 import launchLand from "../../assets/technology/image-launch-vehicle-landscape.jpg";
 import spaceportLand from "../../assets/technology/image-spaceport-landscape.jpg";
 import capsuleLand from "../../assets/technology/image-space-capsule-landscape.jpg";
+import { motion } from "framer-motion";
 const Tech = () => {
   const [tech] = useState(data.technology);
   const [value, setValue] = useState(1);
@@ -21,13 +22,18 @@ const Tech = () => {
     <div className="tech">
       <Nav></Nav>
       <div className="tech__title">
-        <span>02</span>
+        <span>03</span>
         SPACE LAUNCH 101
       </div>
 
       <img className="tech__land" src={imgLand[value]} alt="" />
       <div className="tech__wrapper">
-        <div className="tech__info-wrapper">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="tech__info-wrapper"
+        >
           <div className="tech__btn-list">
             {tech.map((item, index) => (
               <button
@@ -46,11 +52,16 @@ const Tech = () => {
 
             <div className="tech__descr">{description}</div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="tech__img">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="tech__img"
+        >
           <img className="tech__img" src={imgArr[value]} alt={name} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 .crew {
   background-image: url("../../assets/crew/background-crew-desktop.jpg    ");
-  height: 919px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   &__wrapper {
@@ -117,6 +117,10 @@
     right: 110px;
     margin-top: 64px;
   }
+
+  &__phone-img {
+    display: none;
+  }
 }
 
 .active__crew {
@@ -127,4 +131,193 @@
 
 .crew__img img {
   bottom: 0;
+}
+
+@media (max-width: 1680px) {
+  .crew {
+    &__btn {
+      margin-top: -114px;
+    }
+
+    &__img img {
+      width: 456.37px;
+      height: 572px;
+      position: absolute;
+
+      right: 110px;
+      margin-top: 64px;
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .crew {
+    height: 71.3rem;
+
+    &__title {
+      margin-top: 47px;
+      margin-bottom: 30px;
+      margin-left: 59.5px;
+      color: rgb(255, 255, 255);
+      font-family: $barlow Condensed;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 3.38px;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      span {
+        color: rgb(255, 255, 255);
+        font-family: $barlow Condensed;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+        text-align: left;
+      }
+    }
+    &__btn {
+      &-list {
+        display: block;
+        margin-left: 0;
+      }
+    }
+    &__descr {
+      &-wrapper {
+        margin: 0 auto;
+      }
+    }
+    &__wrapper {
+    }
+    &__job {
+      width: 261px;
+      height: 28px;
+      color: rgb(255, 255, 255);
+      font-family: $bellefair;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 auto;
+      margin-bottom: 8px;
+    }
+
+    &__name {
+      width: 457px;
+      height: 46px;
+      color: rgb(255, 255, 255);
+      font-family: $bellefair;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+
+    &__descr {
+      color: rgb(208, 214, 249);
+      font-family: $barlow;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-left: 9px;
+    }
+
+    &__img img {
+      position: relative;
+      margin-left: 150px;
+    }
+
+    &__img {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.hr__phone {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .crew {
+    height: 100%;
+
+    &__btn {
+      &-list {
+        padding-top: 30px;
+      }
+    }
+    &__title {
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    &__job {
+      color: rgb(255, 255, 255);
+      width: unset;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 74px;
+    }
+
+    &__name {
+      color: rgb(255, 255, 255);
+      width: unset;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__descr {
+      width: 302px;
+      height: 100px;
+      color: rgb(208, 214, 249);
+
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__img img {
+      display: none;
+    }
+    &__img {
+      display: none;
+    }
+
+    &__phone-img {
+      display: block;
+    }
+
+    &__phone-img img {
+      width: 177.12px;
+      height: 222px;
+    }
+  }
+  .hr__phone {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+
+    background: rgb(56, 59, 75);
+  }
 }
